@@ -1,0 +1,28 @@
+{
+  "FolderOrderSettings":[
+    {"name":"managers","order":4,"path":"folders/managers.yy",},
+    {"name":"objects","order":3,"path":"folders/objects.yy",},
+    {"name":"scenes","order":2,"path":"folders/scenes.yy",},
+    {"name":"sprites","order":1,"path":"folders/sprites.yy",},
+    {"name":"engine","order":2,"path":"folders/sprites/engine.yy",},
+    {"name":"player","order":1,"path":"folders/sprites/player.yy",},
+  ],
+  "ResourceOrderSettings":[
+    {"name":"Ground","order":1,"path":"objects/Ground/Ground.yy",},
+    {"name":"oDeath","order":5,"path":"objects/oDeath/oDeath.yy",},
+    {"name":"oGround","order":2,"path":"objects/oGround/oGround.yy",},
+    {"name":"oPlatform","order":4,"path":"objects/oPlatform/oPlatform.yy",},
+    {"name":"oPlayer","order":1,"path":"objects/oPlayer/oPlayer.yy",},
+    {"name":"oScene","order":2,"path":"objects/oScene/oScene.yy",},
+    {"name":"oSlope","order":3,"path":"objects/oSlope/oSlope.yy",},
+    {"name":"oTrampoline","order":6,"path":"objects/oTrampoline/oTrampoline.yy",},
+    {"name":"rMainLevel1","order":1,"path":"rooms/rMainLevel1/rMainLevel1.yy",},
+    {"name":"sGround","order":1,"path":"sprites/sGround/sGround.yy",},
+    {"name":"sPlatform","order":3,"path":"sprites/sPlatform/sPlatform.yy",},
+    {"name":"sPlayerJump","order":2,"path":"sprites/sPlayerJump/sPlayerJump.yy",},
+    {"name":"sPlayerRun","order":1,"path":"sprites/sPlayerRun/sPlayerRun.yy",},
+    {"name":"sPlayerWalk","order":4,"path":"sprites/sPlayerWalk/sPlayerWalk.yy",},
+    {"name":"sSlope","order":2,"path":"sprites/sSlope/sSlope.yy",},
+    {"name":"sTramp","order":4,"path":"sprites/sTramp/sTramp.yy",},
+  ],
+}

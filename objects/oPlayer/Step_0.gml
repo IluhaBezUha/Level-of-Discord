@@ -17,6 +17,44 @@ else
 	slowMultiplier = 1;
 wasOnIce = onIce;
 
+// Only store zone on enter
+if (!inSlowZone) {
+    var zone = instance_place(x, y, oSlowZone);
+    if (zone != noone) {
+        inSlowZone = true;
+        pulledOnce = false;
+        slowZoneInstance = zone;
+    }
+}
+
+if (inSlowZone && !pulledOnce) {
+    var cx = slowZoneInstance.x;
+    var cy = slowZoneInstance.y;
+
+    move_towards_point(cx, cy, currentY*1.1);
+
+    if (point_distance(x, y, cx, cy) < 2) {
+        pulledOnce = true;
+        speed = 0;
+        x = cx;
+        y = cy;
+    }
+}
+
+
+
+// Reset when exiting zone
+if (inSlowZone && instance_place(x, y, oSlowZone) == noone) {
+    inSlowZone = false;
+    pulledOnce = false;
+    slowZoneInstance = noone;
+}
+
+
+
+
+
+
 // -- SPEED SETTINGS --
 var maxSpeed = (global.run ? entitySpeed : entitySpeed / 2);
 if onIce 

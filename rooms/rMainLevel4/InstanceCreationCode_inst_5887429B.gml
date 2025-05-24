@@ -1,2 +1,2 @@
 timer = random_range(2,5)
-length = -20
+length = -37

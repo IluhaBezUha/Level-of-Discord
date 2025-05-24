@@ -69,10 +69,10 @@
   "resourceType":"GMProject",
   "resourceVersion":"2.0",
   "RoomOrderNodes":[
+    {"roomId":{"name":"rMainLevel4","path":"rooms/rMainLevel4/rMainLevel4.yy",},},
     {"roomId":{"name":"rMainLevel1","path":"rooms/rMainLevel1/rMainLevel1.yy",},},
     {"roomId":{"name":"rMainLevel2","path":"rooms/rMainLevel2/rMainLevel2.yy",},},
     {"roomId":{"name":"rMainLevel3","path":"rooms/rMainLevel3/rMainLevel3.yy",},},
-    {"roomId":{"name":"rMainLevel4","path":"rooms/rMainLevel4/rMainLevel4.yy",},},
   ],
   "templateType":null,
   "TextureGroups":[

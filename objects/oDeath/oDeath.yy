@@ -32,5 +32,5 @@
     "path":"sprites/sPlatform/sPlatform.yy",
   },
   "spriteMaskId":null,
-  "visible":false,
+  "visible":true,
 }

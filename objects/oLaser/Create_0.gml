@@ -1,3 +1,3 @@
 timer = 0;
-length = 10;
+length = 0;
 

@@ -1,3 +1,3 @@
 iceSpeedX = 0;
 iceSpeedY = 0;
-iceFriction = 0.05;
+icefric = 0.05;

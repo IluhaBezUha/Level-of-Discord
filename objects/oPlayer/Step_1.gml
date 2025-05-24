@@ -1,11 +1,15 @@
-// Track highest Y to measure fall distance
-if (onGround) {
-    fallStartY = y;
+previousYSpeed = currentY;
+
+if (!onGround && !isFalling && sign(currentY) == gravityDir) {
+	isFalling = true;
+	fallStartY = y;
+}
+
+if (onGround && !place_meeting(x, y + 1, oTrampoline)) {
+	fallStartY = y;
+	isFalling = false;
 }
 
 if (!onGround && y < fallStartY) {
-    fallStartY = y; // keep updating if we're still rising
+	fallStartY = y;
 }
-
-lastX = x;
-lastY = y;

@@ -1,9 +1,9 @@
 {
   "$GMObject":"",
-  "%Name":"oSpikes",
+  "%Name":"oSlowZone",
   "eventList":[],
   "managed":true,
-  "name":"oSpikes",
+  "name":"oSlowZone",
   "overriddenProperties":[],
   "parent":{
     "name":"objects",
@@ -28,12 +28,9 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"sSpikes",
-    "path":"sprites/sSpikes/sSpikes.yy",
+    "name":"sSlowZone",
+    "path":"sprites/sSlowZone/sSlowZone.yy",
   },
-  "spriteMaskId":{
-    "name":"sSpikes",
-    "path":"sprites/sSpikes/sSpikes.yy",
-  },
+  "spriteMaskId":null,
   "visible":true,
 }

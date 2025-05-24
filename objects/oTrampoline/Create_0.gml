@@ -1,0 +1,1 @@
+bounceX = 0

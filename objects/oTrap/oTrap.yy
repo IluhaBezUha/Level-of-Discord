@@ -1,11 +1,13 @@
 {
   "$GMObject":"",
-  "%Name":"oIce",
+  "%Name":"oTrap",
   "eventList":[
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":8,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"oIce",
+  "name":"oTrap",
   "overriddenProperties":[],
   "parent":{
     "name":"objects",
@@ -33,8 +35,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"sIce",
-    "path":"sprites/sIce/sIce.yy",
+    "name":"sTrap",
+    "path":"sprites/sTrap/sTrap.yy",
   },
   "spriteMaskId":null,
   "visible":true,

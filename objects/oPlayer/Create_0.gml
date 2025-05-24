@@ -16,6 +16,7 @@ jumping = false;
 jumpingTimeout = 0;
 
 onGround = place_meeting(x, y + 1, Ground);
+onIce = place_meeting(x, y + 1, oIce);
 
 if(!instance_exists(oPlayer_sprite)) {
 	instance_create_layer(x, y, "Objects", oPlayer_sprite);

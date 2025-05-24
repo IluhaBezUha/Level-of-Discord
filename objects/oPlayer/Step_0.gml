@@ -150,3 +150,26 @@ if (place_meeting(x, y + 1, oTrampoline)) {
         // Optional: play animation or sound
     }
 }
+
+onIce = place_meeting(x, y + 1, oIce);
+
+var fric = onIce ? 0.05 : 0.2;
+
+if (global.horizontal == 0) {
+	if (currentX > 0) {
+		currentX = max(0, currentX - fric);
+	} else if (currentX < 0) {
+		currentX = min(0, currentX + fric);
+	}
+}
+
+if (global.horizontal != 0) {
+	currentX += global.horizontal * accel;
+} else if (!onIce) {
+	// normal ground slows you down fast
+	currentX *= 0.5;
+} else {
+	// on ice, keep sliding
+	currentX *= 0.98;
+}
+

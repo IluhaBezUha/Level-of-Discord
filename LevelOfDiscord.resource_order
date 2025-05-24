@@ -15,6 +15,7 @@
     {"name":"oPlayer","order":1,"path":"objects/oPlayer/oPlayer.yy",},
     {"name":"oScene","order":2,"path":"objects/oScene/oScene.yy",},
     {"name":"oSlope","order":3,"path":"objects/oSlope/oSlope.yy",},
+    {"name":"oSpikes","order":7,"path":"objects/oSpikes/oSpikes.yy",},
     {"name":"oTrampoline","order":6,"path":"objects/oTrampoline/oTrampoline.yy",},
     {"name":"rMainLevel1","order":1,"path":"rooms/rMainLevel1/rMainLevel1.yy",},
     {"name":"sGround","order":1,"path":"sprites/sGround/sGround.yy",},
@@ -23,6 +24,7 @@
     {"name":"sPlayerRun","order":1,"path":"sprites/sPlayerRun/sPlayerRun.yy",},
     {"name":"sPlayerWalk","order":4,"path":"sprites/sPlayerWalk/sPlayerWalk.yy",},
     {"name":"sSlope","order":2,"path":"sprites/sSlope/sSlope.yy",},
+    {"name":"sSpikes","order":5,"path":"sprites/sSpikes/sSpikes.yy",},
     {"name":"sTramp","order":4,"path":"sprites/sTramp/sTramp.yy",},
   ],
 }

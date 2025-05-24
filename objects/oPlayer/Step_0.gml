@@ -140,12 +140,13 @@ if (place_meeting(x, y + 1, oTrampoline)) {
     var trampoline = instance_place(x, y + 1, oTrampoline);
     
     if (currentY > 0 && trampoline != noone) {
-        var fallDistance = y - fallStartY;
-        var bounceStrength = clamp(fallDistance * 0.5, 4, 18);
-
+        // Use velocity directly for bounce strength
+        var bounceStrength = clamp(abs(currentY) * 1.2, 6, 160);
         currentY = -bounceStrength;
-        isFalling = false; // reset falling state
 
-        // Optional: trampoline animation/sound
+        isFalling = false;
+        fallStartY = y; // reset fall start to avoid chaining problems
+
+        // Optional: play animation or sound
     }
 }

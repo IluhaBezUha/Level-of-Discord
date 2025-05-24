@@ -4,8 +4,8 @@ currentY = 0;
 xMax = 4;
 yMax = 10000;
 
-entitySpeed = 10;
-entityAccel = 0.6;
+entitySpeed = 14;
+entityAccel = 0.5;
 entityfric = 0.2;
 entityGravity = 0.5;
 gravityDir = 1; // 1 = down, -1 = up
@@ -23,3 +23,5 @@ lastXDirection = 1;
 bounceX = 0;
 previousYSpeed = 0;
 wasOnIce = onIce;
+slowMultiplier = 1;
+wasInSlowZone = false;

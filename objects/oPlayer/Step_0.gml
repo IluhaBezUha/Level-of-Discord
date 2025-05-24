@@ -10,9 +10,12 @@ if (onIce && !wasOnIce) {
         currentX += 4 * sign(input == 0 ? lastXDirection : input); // sudden nudge
     }
 }
-wasOnIce = onIce;
 
-inSlowZone = place_meeting(x, y, oSlowZone); // for later use
+if place_meeting(x,y,oSlowZone)
+	slowMultiplier = 0.5;
+else
+	slowMultiplier = 1;
+wasOnIce = onIce;
 
 // -- SPEED SETTINGS --
 var maxSpeed = (global.run ? entitySpeed : entitySpeed / 2);
@@ -21,43 +24,27 @@ if onIce
 
 var accel = onIce ? 0.05 : entityAccel;
 var fric = onIce ? 0.1 : entityfric;
-var slowed = false
-if (inSlowZone && !slowed) {
-	slowed = true
-	maxSpeed *= 0.5;
-	accel *= 0.5;
-	entityGravity *= 0.5
-	jumpStrength *= 2
-	yMax *= 0.5
-}
-if (!inSlowZone && slowed) {
-	slowed = false
-	maxSpeed *= 2;
-	accel *= 2;
-	entityGravity *= 2
-	jumpStrength *= 0.5
-	yMax *= 2
-}
+
+
 // -- HORIZONTAL MOVEMENT --
-// Instead of setting currentX directly to input * accel, ease into it
 // --- Ice Physics ---
 if (onIce) {
     var sped = abs(currentX);
     var pdir = sign(currentX);
 
-    // Slippery fast acceleration (scaled up!)
+
     var effectiveAccel = 0.8;
-    var turnPenalty = clamp(sped * 0.4, 0, 3); // harder to turn when faster
+    var turnPenalty = clamp(sped * 0.4, 0, 3);
     var inputAccel = input * effectiveAccel;
 
-    // If trying to turn against momentum, apply penalty
+   
     if (input != 0 && sign(input) != pdir && sped > 0.5) {
-        inputAccel /= (1 + turnPenalty); // nerf the input when turning against motion
+        inputAccel /= (1 + turnPenalty); 
     }
 
     currentX += inputAccel;
 
-    // Minimal friction — you'll coast forever unless braking
+
     if (input == 0 && abs(currentX) < fric) {
         currentX = 0;
     } else if (input == 0) {
@@ -73,7 +60,7 @@ if (onIce) {
 }
 
 if (onIce && input != 0 && sign(currentX) != sign(input)) {
-    currentX += input * (accel * 0.2); // penalize sudden turn
+    currentX += input * (accel * 0.2);
 }
 
 
@@ -128,7 +115,7 @@ if (place_meeting(x, y + 1, oTrampoline)) {
 }
 
 currentY = clamp(currentY, -yMax, yMax);
-
+currentX *= slowMultiplier
 // -- PLATFORM --
 var plat = instance_place(x, y + 1, oPlatform);
 if (plat != noone) && (!place_meeting(x+plat.dx,y,Ground)) && (!place_meeting(x,y+plat.dy,Ground)) {
@@ -138,14 +125,42 @@ if (plat != noone) && (!place_meeting(x+plat.dx,y,Ground)) && (!place_meeting(x,
 
 
 // -- MOVEMENT (AFTER FORCES) --
-if (!place_meeting(x + round(currentX), y, Ground)) {
-	x += round(currentX);
-} else {
-	currentX = 0;
+// -- HORIZONTAL MOVEMENT WITH CONTINUOUS STEP-UP SCAN --
+// -- SMART STEP HANDLING (UP + DOWN) --
+var signX = sign(currentX);
+var absX = abs(round(currentX));
+var maxStep = 17; 
+var maxDrop = 4; 
+
+for (var i = 0; i < absX; i++) {
+	var moved = false;
+	for (var j = 0; j <= maxStep; j++) {
+		if (!place_meeting(x + signX, y - j * gravityDir, Ground) &&
+		    !place_meeting(x + signX, y - j * gravityDir + gravityDir, Ground)) {
+			x += signX;
+			y -= j * gravityDir;
+			moved = true;
+			break;
+		}
+	}
+
+	
+	if (!moved) {
+		if (!place_meeting(x + signX, y, Ground)) {
+			x += signX;
+		} 
+		else {
+			currentX = 0;
+			break;
+		}
+	}
 }
 
+
+
+
 if (!place_meeting(x, y + round(currentY), Ground)) {
-	y += round(currentY);
+	y += round(currentY) * slowMultiplier;
 } else {
 	currentY = 0;
 }
@@ -170,8 +185,19 @@ if (oPlayer_sprite.sprite_index == sPlayerJump && oPlayer_sprite.image_index >= 
 	oPlayer_sprite.image_speed = 1;
 }
 
+//var tbelow = instance_place(x, y + 5, Ground);
+//if (tbelow != noone) {
+    //if (instance_exists(oPlayer_sprite)) {
+   //     oPlayer_sprite.image_angle = -tbelow.image_angle;
+	//	if tbelow.image_angle != 0 {
+		//	oPlayer_sprite.y += 50
+		//	
+		//}
+	//}
+//}
+
 if place_meeting(x,y,oDeath)
-	room_restart()
+	game_restart()
 	
 	
 	

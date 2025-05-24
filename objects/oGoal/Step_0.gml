@@ -1,2 +1,2 @@
-if place_meeting(x,y,oPlayer) && keyboard_key_press(vk_space)
+if place_meeting(x,y,oPlayer)
 	room_goto_next()

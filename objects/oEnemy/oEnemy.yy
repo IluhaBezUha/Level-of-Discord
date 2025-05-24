@@ -1,20 +1,22 @@
 {
   "$GMObject":"",
-  "%Name":"oPlayer",
+  "%Name":"oEnemy",
   "eventList":[
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":1,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"oPlayer",
+  "name":"oEnemy",
   "overriddenProperties":[],
   "parent":{
     "name":"objects",
     "path":"folders/objects.yy",
   },
-  "parentObjectId":null,
-  "persistent":true,
+  "parentObjectId":{
+    "name":"oDeath",
+    "path":"objects/oDeath/oDeath.yy",
+  },
+  "persistent":false,
   "physicsAngularDamping":0.1,
   "physicsDensity":0.5,
   "physicsFriction":0.2,
@@ -32,9 +34,9 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"sCollisionMask",
-    "path":"sprites/sCollisionMask/sCollisionMask.yy",
+    "name":"sEnemy",
+    "path":"sprites/sEnemy/sEnemy.yy",
   },
   "spriteMaskId":null,
-  "visible":false,
+  "visible":true,
 }

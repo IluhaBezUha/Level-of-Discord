@@ -28,6 +28,7 @@
   "resources":[
     {"id":{"name":"Ground","path":"objects/Ground/Ground.yy",},},
     {"id":{"name":"oDeath","path":"objects/oDeath/oDeath.yy",},},
+    {"id":{"name":"oEnemy","path":"objects/oEnemy/oEnemy.yy",},},
     {"id":{"name":"oFood","path":"objects/oFood/oFood.yy",},},
     {"id":{"name":"oGoal","path":"objects/oGoal/oGoal.yy",},},
     {"id":{"name":"oGround","path":"objects/oGround/oGround.yy",},},
@@ -43,7 +44,11 @@
     {"id":{"name":"oTrampoline","path":"objects/oTrampoline/oTrampoline.yy",},},
     {"id":{"name":"oTrap","path":"objects/oTrap/oTrap.yy",},},
     {"id":{"name":"rMainLevel1","path":"rooms/rMainLevel1/rMainLevel1.yy",},},
+    {"id":{"name":"rMainLevel2","path":"rooms/rMainLevel2/rMainLevel2.yy",},},
+    {"id":{"name":"rMainLevel3","path":"rooms/rMainLevel3/rMainLevel3.yy",},},
+    {"id":{"name":"rMainLevel4","path":"rooms/rMainLevel4/rMainLevel4.yy",},},
     {"id":{"name":"sCollisionMask","path":"sprites/sCollisionMask/sCollisionMask.yy",},},
+    {"id":{"name":"sEnemy","path":"sprites/sEnemy/sEnemy.yy",},},
     {"id":{"name":"sFood","path":"sprites/sFood/sFood.yy",},},
     {"id":{"name":"sGoal","path":"sprites/sGoal/sGoal.yy",},},
     {"id":{"name":"sGround","path":"sprites/sGround/sGround.yy",},},
@@ -63,6 +68,9 @@
   "resourceVersion":"2.0",
   "RoomOrderNodes":[
     {"roomId":{"name":"rMainLevel1","path":"rooms/rMainLevel1/rMainLevel1.yy",},},
+    {"roomId":{"name":"rMainLevel2","path":"rooms/rMainLevel2/rMainLevel2.yy",},},
+    {"roomId":{"name":"rMainLevel3","path":"rooms/rMainLevel3/rMainLevel3.yy",},},
+    {"roomId":{"name":"rMainLevel4","path":"rooms/rMainLevel4/rMainLevel4.yy",},},
   ],
   "templateType":null,
   "TextureGroups":[

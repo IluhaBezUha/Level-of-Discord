@@ -5,4 +5,3 @@ global.jump = (keyboard_check_pressed(vk_up));
 global.jumpHold = (keyboard_check(vk_up));
 
 global.run = (keyboard_check(vk_shift));
-global.key = false

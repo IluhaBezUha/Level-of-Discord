@@ -40,6 +40,7 @@
     {"id":{"name":"oKey","path":"objects/oKey/oKey.yy",},},
     {"id":{"name":"oLaser_1","path":"objects/oLaser_1/oLaser_1.yy",},},
     {"id":{"name":"oLaser","path":"objects/oLaser/oLaser.yy",},},
+    {"id":{"name":"oPanel","path":"objects/oPanel/oPanel.yy",},},
     {"id":{"name":"oPlatform","path":"objects/oPlatform/oPlatform.yy",},},
     {"id":{"name":"oPlayer_sprite","path":"objects/oPlayer_sprite/oPlayer_sprite.yy",},},
     {"id":{"name":"oPlayer","path":"objects/oPlayer/oPlayer.yy",},},

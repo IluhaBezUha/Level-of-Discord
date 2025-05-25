@@ -22,6 +22,7 @@
     {"name":"oKey","order":19,"path":"objects/oKey/oKey.yy",},
     {"name":"oLaser_1","order":20,"path":"objects/oLaser_1/oLaser_1.yy",},
     {"name":"oLaser","order":14,"path":"objects/oLaser/oLaser.yy",},
+    {"name":"oPanel","order":21,"path":"objects/oPanel/oPanel.yy",},
     {"name":"oPlatform","order":4,"path":"objects/oPlatform/oPlatform.yy",},
     {"name":"oPlayer","order":1,"path":"objects/oPlayer/oPlayer.yy",},
     {"name":"oScene","order":2,"path":"objects/oScene/oScene.yy",},

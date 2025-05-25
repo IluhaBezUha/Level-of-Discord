@@ -1,2 +1,6 @@
-global.key = true;
-instance_destroy();
+if (!global.key) {
+    global.key = true;
+    with (id) {
+        instance_destroy();
+    }
+}

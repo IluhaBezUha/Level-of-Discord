@@ -31,6 +31,8 @@
     {"name":"rMainLevel4","order":4,"path":"rooms/rMainLevel4/rMainLevel4.yy",},
     {"name":"rMainLevel5","order":5,"path":"rooms/rMainLevel5/rMainLevel5.yy",},
     {"name":"sCollisionMaskRev","order":13,"path":"sprites/sCollisionMaskRev/sCollisionMaskRev.yy",},
+    {"name":"sDisappear","order":14,"path":"sprites/sDisappear/sDisappear.yy",},
+    {"name":"sDisappearSpikes","order":15,"path":"sprites/sDisappearSpikes/sDisappearSpikes.yy",},
     {"name":"sEnemy","order":11,"path":"sprites/sEnemy/sEnemy.yy",},
     {"name":"sFood","order":7,"path":"sprites/sFood/sFood.yy",},
     {"name":"sGoal","order":6,"path":"sprites/sGoal/sGoal.yy",},

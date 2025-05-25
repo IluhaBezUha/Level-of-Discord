@@ -1,12 +1,9 @@
 {
   "$GMObject":"",
-  "%Name":"oTrampoline",
-  "eventList":[
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-  ],
+  "%Name":"oDoor",
+  "eventList":[],
   "managed":true,
-  "name":"oTrampoline",
+  "name":"oDoor",
   "overriddenProperties":[],
   "parent":{
     "name":"objects",
@@ -31,8 +28,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"sTramp",
-    "path":"sprites/sTramp/sTramp.yy",
+    "name":"sDoor",
+    "path":"sprites/sDoor/sDoor.yy",
   },
   "spriteMaskId":null,
   "visible":true,

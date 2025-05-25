@@ -1,12 +1,9 @@
 {
   "$GMObject":"",
-  "%Name":"oTrampoline",
-  "eventList":[
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-  ],
+  "%Name":"oDisappear",
+  "eventList":[],
   "managed":true,
-  "name":"oTrampoline",
+  "name":"oDisappear",
   "overriddenProperties":[],
   "parent":{
     "name":"objects",
@@ -31,8 +28,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"sTramp",
-    "path":"sprites/sTramp/sTramp.yy",
+    "name":"sDisappear",
+    "path":"sprites/sDisappear/sDisappear.yy",
   },
   "spriteMaskId":null,
   "visible":true,

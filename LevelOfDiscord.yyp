@@ -51,6 +51,7 @@
     {"id":{"name":"rMainLevel4","path":"rooms/rMainLevel4/rMainLevel4.yy",},},
     {"id":{"name":"rMainLevel5","path":"rooms/rMainLevel5/rMainLevel5.yy",},},
     {"id":{"name":"sCollisionMask","path":"sprites/sCollisionMask/sCollisionMask.yy",},},
+    {"id":{"name":"sCollisionMaskRev","path":"sprites/sCollisionMaskRev/sCollisionMaskRev.yy",},},
     {"id":{"name":"sEnemy","path":"sprites/sEnemy/sEnemy.yy",},},
     {"id":{"name":"sFood","path":"sprites/sFood/sFood.yy",},},
     {"id":{"name":"sGoal","path":"sprites/sGoal/sGoal.yy",},},

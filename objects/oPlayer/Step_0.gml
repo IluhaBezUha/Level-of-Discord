@@ -151,12 +151,8 @@ if (place_meeting(x, y + 1, oTrampoline)) {
 
 currentY = clamp(currentY, -yMax, yMax);
 //currentX *= slowMultiplier
-// -- PLATFORM --
-var plat = instance_place(x, y + 1, oPlatform);
-if (plat != noone) && (!place_meeting(x+plat.dx,y,Ground)) && (!place_meeting(x,y+plat.dy,Ground)) {
-    x += plat.dx;
-    y += plat.dy;
-}
+
+
 
 
 // -- MOVEMENT (AFTER FORCES) --

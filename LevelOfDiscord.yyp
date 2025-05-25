@@ -31,6 +31,7 @@
     {"id":{"name":"oEnemy","path":"objects/oEnemy/oEnemy.yy",},},
     {"id":{"name":"oFood","path":"objects/oFood/oFood.yy",},},
     {"id":{"name":"oGoal","path":"objects/oGoal/oGoal.yy",},},
+    {"id":{"name":"oGravityflip","path":"objects/oGravityflip/oGravityflip.yy",},},
     {"id":{"name":"oGround","path":"objects/oGround/oGround.yy",},},
     {"id":{"name":"oIce","path":"objects/oIce/oIce.yy",},},
     {"id":{"name":"oLaser","path":"objects/oLaser/oLaser.yy",},},
@@ -48,6 +49,7 @@
     {"id":{"name":"rMainLevel2","path":"rooms/rMainLevel2/rMainLevel2.yy",},},
     {"id":{"name":"rMainLevel3","path":"rooms/rMainLevel3/rMainLevel3.yy",},},
     {"id":{"name":"rMainLevel4","path":"rooms/rMainLevel4/rMainLevel4.yy",},},
+    {"id":{"name":"rMainLevel5","path":"rooms/rMainLevel5/rMainLevel5.yy",},},
     {"id":{"name":"sCollisionMask","path":"sprites/sCollisionMask/sCollisionMask.yy",},},
     {"id":{"name":"sEnemy","path":"sprites/sEnemy/sEnemy.yy",},},
     {"id":{"name":"sFood","path":"sprites/sFood/sFood.yy",},},
@@ -69,10 +71,11 @@
   "resourceType":"GMProject",
   "resourceVersion":"2.0",
   "RoomOrderNodes":[
-    {"roomId":{"name":"rMainLevel4","path":"rooms/rMainLevel4/rMainLevel4.yy",},},
     {"roomId":{"name":"rMainLevel1","path":"rooms/rMainLevel1/rMainLevel1.yy",},},
     {"roomId":{"name":"rMainLevel2","path":"rooms/rMainLevel2/rMainLevel2.yy",},},
     {"roomId":{"name":"rMainLevel3","path":"rooms/rMainLevel3/rMainLevel3.yy",},},
+    {"roomId":{"name":"rMainLevel4","path":"rooms/rMainLevel4/rMainLevel4.yy",},},
+    {"roomId":{"name":"rMainLevel5","path":"rooms/rMainLevel5/rMainLevel5.yy",},},
   ],
   "templateType":null,
   "TextureGroups":[

@@ -38,5 +38,5 @@
     "name":"sSpikes",
     "path":"sprites/sSpikes/sSpikes.yy",
   },
-  "visible":true,
+  "visible":false,
 }

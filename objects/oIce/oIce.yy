@@ -37,5 +37,5 @@
     "path":"sprites/sIce/sIce.yy",
   },
   "spriteMaskId":null,
-  "visible":true,
+  "visible":false,
 }

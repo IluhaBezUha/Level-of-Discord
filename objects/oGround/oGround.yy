@@ -35,5 +35,5 @@
     "path":"sprites/sGround/sGround.yy",
   },
   "spriteMaskId":null,
-  "visible":true,
+  "visible":false,
 }

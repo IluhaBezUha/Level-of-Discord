@@ -234,5 +234,3 @@ if (oPlayer_sprite.sprite_index == sPlayerJump && oPlayer_sprite.image_index >= 
 if place_meeting(x,y,oDeath)
 	game_restart()
 	
-	
-	

@@ -9,6 +9,9 @@ entityAccel = 0.5;
 entityfric = 0.2;
 entityGravity = 0.5;
 gravityDir = 1; // 1 = down, -1 = up
+originalGravityDir = gravityDir;
+gravityFlippedInZone = false; 
+
 
 jumpStrength = 16;
 jumpingTimeout = 10;

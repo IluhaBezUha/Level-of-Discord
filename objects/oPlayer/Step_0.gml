@@ -17,24 +17,37 @@ else
 	slowMultiplier = 1;
 wasOnIce = onIce;
 
-if (slowState == 1 && instance_exists(slowZone)) {
-    var cx = slowZone.x;
-    var cy = slowZone.y;
+var insideZone = place_meeting(x, y, oSlowZone);
 
-    x += (cx - x) * 0.05;
-    y += (cy - y) * 0.05;
+// ENTERING ZONE
+if (insideZone && !inSlowZone) {
+    inSlowZone = true;
+    gravityFlippedInZone = true;
+    gravityDir *= -1;
+	gravityDir *= -1;
 
-    if (point_distance(x, y, cx, cy) < 1) {
-        slowState = 0;
-    }
+    // Apply low gravity and speed cap
+    yMax = 1;
+    entityGravity = 0.000001;
+	currentY = 0;
 }
 
-if (inSlowZone && !place_meeting(x, y, oSlowZone)) {
+// LEAVING ZONE
+if (!insideZone && inSlowZone) {
     inSlowZone = false;
-    slowZone = noone;
-    slowState = 0;
-    currentY = 0;
+    gravityDir = originalGravityDir;
+    gravityFlippedInZone = false;
+
+    yMax = 10000;
+    entityGravity = 0.5;
 }
+
+// FLIP gravity manually in zone
+if (inSlowZone && keyboard_check_released(vk_up)) {
+    gravityDir *= -1;
+	currentY = clamp(currentY,-yMax,yMax)
+}
+
 
 
 
@@ -115,6 +128,7 @@ if (onGround) {
 		jumpingTimeout--;
 	} else {
 		currentY += entityGravity * gravityDir;
+		currentY = clamp(currentY,-yMax, yMax)
 	}
 }
 

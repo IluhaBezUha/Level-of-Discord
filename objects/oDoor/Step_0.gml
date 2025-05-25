@@ -1,3 +1,3 @@
-if global.key {
+if global.key == true {
 	instance_destroy()
 }

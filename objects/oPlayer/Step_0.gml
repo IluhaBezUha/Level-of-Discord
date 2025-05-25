@@ -17,41 +17,24 @@ else
 	slowMultiplier = 1;
 wasOnIce = onIce;
 
-// Only store zone on enter
-if (!inSlowZone) {
-    var zone = instance_place(x, y, oSlowZone);
-    if (zone != noone) {
-        inSlowZone = true;
-        pulledOnce = false;
-        slowZoneInstance = zone;
+if (slowState == 1 && instance_exists(slowZone)) {
+    var cx = slowZone.x;
+    var cy = slowZone.y;
+
+    x += (cx - x) * 0.05;
+    y += (cy - y) * 0.05;
+
+    if (point_distance(x, y, cx, cy) < 1) {
+        slowState = 0;
     }
 }
 
-if (inSlowZone && !pulledOnce) {
-    var cx = slowZoneInstance.x;
-    var cy = slowZoneInstance.y;
-
-    move_towards_point(cx, cy, currentY*1.1);
-
-    if (point_distance(x, y, cx, cy) < 2) {
-        pulledOnce = true;
-        speed = 0;
-        x = cx;
-        y = cy;
-    }
-}
-
-
-
-// Reset when exiting zone
-if (inSlowZone && instance_place(x, y, oSlowZone) == noone) {
+if (inSlowZone && !place_meeting(x, y, oSlowZone)) {
     inSlowZone = false;
-    pulledOnce = false;
-    slowZoneInstance = noone;
+    slowZone = noone;
+    slowState = 0;
+    currentY = 0;
 }
-
-
-
 
 
 
@@ -153,7 +136,7 @@ if (place_meeting(x, y + 1, oTrampoline)) {
 }
 
 currentY = clamp(currentY, -yMax, yMax);
-currentX *= slowMultiplier
+//currentX *= slowMultiplier
 // -- PLATFORM --
 var plat = instance_place(x, y + 1, oPlatform);
 if (plat != noone) && (!place_meeting(x+plat.dx,y,Ground)) && (!place_meeting(x,y+plat.dy,Ground)) {

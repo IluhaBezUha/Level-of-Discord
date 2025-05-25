@@ -32,3 +32,6 @@ slowZoneInstance = noone;
 slowX = 0;
 slowY = 0;
 pulledOnce = false
+inSlowZone = false;
+slowState = 0; // 0 = normal, 1 = pulling
+slowZone = noone;

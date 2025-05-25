@@ -54,3 +54,9 @@ if (plat != noone) {
         }
     }
 }
+
+// Detect cloud directly under
+var cloud = instance_place(x, y + gravityDir, oCloud);
+if (cloud != noone) {
+    y += (cloud.y - cloud.lastY);
+}

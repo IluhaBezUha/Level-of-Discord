@@ -1,5 +1,6 @@
 {
   "FolderOrderSettings":[
+    {"name":"assets","order":5,"path":"folders/assets.yy",},
     {"name":"managers","order":4,"path":"folders/managers.yy",},
     {"name":"objects","order":3,"path":"folders/objects.yy",},
     {"name":"scenes","order":2,"path":"folders/scenes.yy",},
@@ -9,6 +10,7 @@
   ],
   "ResourceOrderSettings":[
     {"name":"Ground","order":1,"path":"objects/Ground/Ground.yy",},
+    {"name":"oCloud","order":22,"path":"objects/oCloud/oCloud.yy",},
     {"name":"oDeath","order":5,"path":"objects/oDeath/oDeath.yy",},
     {"name":"oDisappear","order":16,"path":"objects/oDisappear/oDisappear.yy",},
     {"name":"oDisappearSpike","order":17,"path":"objects/oDisappearSpike/oDisappearSpike.yy",},
@@ -31,6 +33,7 @@
     {"name":"oSpikes","order":7,"path":"objects/oSpikes/oSpikes.yy",},
     {"name":"oTrampoline","order":6,"path":"objects/oTrampoline/oTrampoline.yy",},
     {"name":"oTrap","order":11,"path":"objects/oTrap/oTrap.yy",},
+    {"name":"Path1","order":3,"path":"paths/Path1/Path1.yy",},
     {"name":"rMainLevel1","order":1,"path":"rooms/rMainLevel1/rMainLevel1.yy",},
     {"name":"rMainLevel2","order":3,"path":"rooms/rMainLevel2/rMainLevel2.yy",},
     {"name":"rMainLevel3","order":2,"path":"rooms/rMainLevel3/rMainLevel3.yy",},

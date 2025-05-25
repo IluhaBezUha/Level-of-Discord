@@ -10,6 +10,7 @@
   },
   "defaultScriptType":1,
   "Folders":[
+    {"$GMFolder":"","%Name":"assets","folderPath":"folders/assets.yy","name":"assets","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"managers","folderPath":"folders/managers.yy","name":"managers","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"objects","folderPath":"folders/objects.yy","name":"objects","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"scenes","folderPath":"folders/scenes.yy","name":"scenes","resourceType":"GMFolder","resourceVersion":"2.0",},
@@ -27,6 +28,7 @@
   "name":"LevelOfDiscord",
   "resources":[
     {"id":{"name":"Ground","path":"objects/Ground/Ground.yy",},},
+    {"id":{"name":"oCloud","path":"objects/oCloud/oCloud.yy",},},
     {"id":{"name":"oDeath","path":"objects/oDeath/oDeath.yy",},},
     {"id":{"name":"oDisappear","path":"objects/oDisappear/oDisappear.yy",},},
     {"id":{"name":"oDisappearSpike","path":"objects/oDisappearSpike/oDisappearSpike.yy",},},
@@ -51,6 +53,7 @@
     {"id":{"name":"oSpikes","path":"objects/oSpikes/oSpikes.yy",},},
     {"id":{"name":"oTrampoline","path":"objects/oTrampoline/oTrampoline.yy",},},
     {"id":{"name":"oTrap","path":"objects/oTrap/oTrap.yy",},},
+    {"id":{"name":"Path1","path":"paths/Path1/Path1.yy",},},
     {"id":{"name":"rMainLevel1","path":"rooms/rMainLevel1/rMainLevel1.yy",},},
     {"id":{"name":"rMainLevel2","path":"rooms/rMainLevel2/rMainLevel2.yy",},},
     {"id":{"name":"rMainLevel3","path":"rooms/rMainLevel3/rMainLevel3.yy",},},
@@ -68,6 +71,7 @@
     {"id":{"name":"sGround","path":"sprites/sGround/sGround.yy",},},
     {"id":{"name":"sIce","path":"sprites/sIce/sIce.yy",},},
     {"id":{"name":"sLaser","path":"sprites/sLaser/sLaser.yy",},},
+    {"id":{"name":"Spikes","path":"sprites/Spikes/Spikes.yy",},},
     {"id":{"name":"sPlatform","path":"sprites/sPlatform/sPlatform.yy",},},
     {"id":{"name":"sPlayerIdle","path":"sprites/sPlayerIdle/sPlayerIdle.yy",},},
     {"id":{"name":"sPlayerJump","path":"sprites/sPlayerJump/sPlayerJump.yy",},},

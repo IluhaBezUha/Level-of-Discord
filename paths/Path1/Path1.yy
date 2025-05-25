@@ -1,0 +1,19 @@
+{
+  "$GMPath":"",
+  "%Name":"Path1",
+  "closed":false,
+  "kind":1,
+  "name":"Path1",
+  "parent":{
+    "name":"managers",
+    "path":"folders/managers.yy",
+  },
+  "points":[
+    {"speed":100.0,"x":0.0,"y":4000.0,},
+    {"speed":100.0,"x":1400.0,"y":3700.0,},
+    {"speed":100.0,"x":1400.0,"y":1500.0,},
+  ],
+  "precision":1,
+  "resourceType":"GMPath",
+  "resourceVersion":"2.0",
+}

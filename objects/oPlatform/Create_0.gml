@@ -9,3 +9,4 @@ lastX = x;
 lastY = y;
 dx = 0
 dy = 0
+fx = noone;

@@ -13,9 +13,11 @@ dy = y - lastY;
 lastX = x;
 lastY = y;
 
-var fx = instance_create_layer(x, y, "Sprites", PlatformSprite);
-fx.follow = id;
-fx.xOffset = 0;
-fx.yOffset = 0;
-fx.xscale_ratio = 0.7272727273;
-fx.yscale_ratio = 1.904761905;
+if fx == noone{ 
+	fx = instance_create_layer(x, y, "Sprites", PlatformSprite);
+	fx.follow = id;
+	fx.xOffset = 0;
+	fx.yOffset = 0;
+	fx.xscale_ratio = 0.7272727273;
+	fx.yscale_ratio = 1.904761905;
+}

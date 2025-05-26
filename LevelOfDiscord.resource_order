@@ -10,8 +10,10 @@
   ],
   "ResourceOrderSettings":[
     {"name":"ChickSprite","order":14,"path":"objects/ChickSprite/ChickSprite.yy",},
+    {"name":"EraserSprite","order":20,"path":"objects/EraserSprite/EraserSprite.yy",},
     {"name":"FoodSprite","order":16,"path":"objects/FoodSprite/FoodSprite.yy",},
     {"name":"Ground","order":1,"path":"objects/Ground/Ground.yy",},
+    {"name":"LaserSprite","order":21,"path":"objects/LaserSprite/LaserSprite.yy",},
     {"name":"oCloud","order":22,"path":"objects/oCloud/oCloud.yy",},
     {"name":"oDeath","order":5,"path":"objects/oDeath/oDeath.yy",},
     {"name":"oDisappear","order":16,"path":"objects/oDisappear/oDisappear.yy",},
@@ -49,6 +51,7 @@
     {"name":"CatBatoot","order":6,"path":"sprites/CatBatoot/CatBatoot.yy",},
     {"name":"Chick","order":9,"path":"sprites/Chick/Chick.yy",},
     {"name":"Cloud","order":4,"path":"sprites/Cloud/Cloud.yy",},
+    {"name":"Eraser","order":19,"path":"sprites/Eraser/Eraser.yy",},
     {"name":"Food","order":2,"path":"sprites/Food/Food.yy",},
     {"name":"Key","order":1,"path":"sprites/Key/Key.yy",},
     {"name":"Laser","order":8,"path":"sprites/Laser/Laser.yy",},

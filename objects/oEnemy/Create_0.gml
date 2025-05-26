@@ -4,3 +4,4 @@ endX = 0
 endY = 0
 pspd = 0
 dir = 0
+fx = noone;

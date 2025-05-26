@@ -1,13 +1,13 @@
 {
   "$GMObject":"",
-  "%Name":"oDeath",
+  "%Name":"LaserSprite",
   "eventList":[],
   "managed":true,
-  "name":"oDeath",
+  "name":"LaserSprite",
   "overriddenProperties":[],
   "parent":{
-    "name":"objects",
-    "path":"folders/objects.yy",
+    "name":"assets",
+    "path":"folders/assets.yy",
   },
   "parentObjectId":null,
   "persistent":false,
@@ -28,9 +28,9 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"sPlatform",
-    "path":"sprites/sPlatform/sPlatform.yy",
+    "name":"Laser",
+    "path":"sprites/Laser/Laser.yy",
   },
   "spriteMaskId":null,
-  "visible":false,
+  "visible":true,
 }
